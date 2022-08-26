@@ -1,0 +1,18 @@
+.main {
+    display: block;
+    text-align: center;
+    margin: 0px auto 0px;
+    width: auto;
+    border: 3px solid #4c4c4c;
+}
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0px;
+}
+
+.logout {
+    margin: 16px 50px 10px 15px;
+    height: 30px;
+}

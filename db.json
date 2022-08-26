@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "email": "TestUser@test.ru",
+      "password": "$2a$10$LxGvTDnIpNPPUSLEOnYw/.af.ATka9rdwNO/ntZGuE73mXG0htTXC",
+      "login": "Nickolay",
+      "id": 1
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Тестовая запись",
+      "phone": "123456789",
+      "uniqId": "18f79e60-ba96-48b8-9754-7a34d1244fa1",
+      "id": 1
+    },
+    {
+      "name": "Иван Иванович Крутецкий",
+      "phone": "987542213",
+      "uniqId": "4bb39f95-fb2e-4690-b208-33956c2d0129",
+      "id": 2
+    },
+    {
+      "name": "Петров Петрович",
+      "phone": "23232232322",
+      "uniqId": "79e6fa63-7279-4b75-a066-4aba4c6054f1",
+      "id": 3
+    },
+    {
+      "name": "Васян Душнила",
+      "phone": "1232443366",
+      "uniqId": "0c80c330-6d48-49be-8b1f-ebb03c20d5ce",
+      "id": 4
+    }
+  ]
+}

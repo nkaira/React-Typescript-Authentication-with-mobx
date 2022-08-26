@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+td {
+    width: 250px;
+    border: 1px solid #4c4c4c;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+
+    & p {
+        padding-right: 100px;
+
+        &:first-child {
+            padding-left: 100px;
+        }
+    }
+}
+
+.search {
+    height: 25px;
+    width: 300px;
+}

@@ -1,0 +1,35 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+}
+
+.input {
+    height: 25px;
+    display: flex;
+    width: 242px;
+    margin-top: 5px;
+}
+
+.error {
+    position: absolute;
+    color: red;
+    font-size: 11px;
+    top: 50px;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 35px 0 0 12px;
+    margin-left: 12px;
+    position: relative;
+}
+
+.button {
+    height: 33px;
+    width: 100px;
+    margin: 22px 0 0 12px;
+}
