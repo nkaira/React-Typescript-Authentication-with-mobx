@@ -22,6 +22,8 @@ const EditableContacts: FC<IEditableContacts> = ({ editFormData, onEdit, onCance
                 <input
                     type='text'
                     required={true}
+                    pattern='[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}'
+                    title='Use the format: +7 (777) 777-77-77'
                     placeholder='Enter a phone number...'
                     name='phone'
                     value={editFormData.phone}

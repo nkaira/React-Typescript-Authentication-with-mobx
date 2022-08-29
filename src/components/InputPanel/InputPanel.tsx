@@ -58,13 +58,13 @@ const InputPanel: FC = () => {
                     <input className={styles.input} type='tel' placeholder='enter telephone number'
                         {...register('phone', {
                             required: 'this field is required',
-                            minLength: {
-                                value: 4,
-                                message: 'min 4 characters'
-                            },
+                            // minLength: {
+                            //     value: 4,
+                            //     message: 'min 4 characters'
+                            // },
                             pattern: {
-                                value: /^[0-9]*$/,
-                                message: 'Only numbers are allowed'
+                                value: /[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}/,
+                                message: 'Use the format: +7 (777) 777-77-77'
                             }
                         })}
                     />
