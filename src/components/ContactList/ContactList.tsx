@@ -1,4 +1,4 @@
-import React, { FC, useContext, useState } from 'react';
+import React, { FC, useCallback, useContext, useEffect, useState } from 'react';
 import { observer } from 'mobx-react';
 import { Context } from 'index';
 
@@ -58,12 +58,12 @@ const ContactList: FC = () => {
         setEditContactId(null);
     };
 
-    const handleDeleteContact = (targetServerId: number, targetUniqId: string) => {
+    const handleDeleteContact = useCallback((targetServerId: number, targetUniqId: string) => {
         contactsStore.deleteContactServer(targetServerId);
         contactsStore.deleteContactLocal(targetUniqId);
-    };
+    }, []);
 
-    const handleEditContact = (event: React.SyntheticEvent, contact: IContact) => {
+    const handleEditContact = useCallback((event: React.SyntheticEvent, contact: IContact) => {
         event.preventDefault();
         setEditContactId(contact.uniqId);
 
@@ -74,7 +74,7 @@ const ContactList: FC = () => {
             uniqId: contact.uniqId
         };
         setEditFormData(formValues);
-    };
+    }, []);
 
     const filteredContacts = contactsStore.contacts.filter(contact => {
         return contact.name.toLowerCase().includes(searchValue.toLowerCase());
